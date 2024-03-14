@@ -13,7 +13,7 @@
 
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/detailsImageView"
             android:layout_width="match_parent"
             android:layout_height="243dp"
             tools:srcCompat="@tools:sample/avatars" />
@@ -113,7 +113,7 @@
             android:textSize="20sp" />
 
         <TextView
-            android:id="@+id/textView9"
+            android:id="@+id/txtEducation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
