@@ -32,7 +32,7 @@
             android:layout_gravity="right"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:id="@+id/btnGoToCart"
+            android:id="@+id/btnGoHome"
             android:src="@drawable/tomain"/>
     </FrameLayout>
 
