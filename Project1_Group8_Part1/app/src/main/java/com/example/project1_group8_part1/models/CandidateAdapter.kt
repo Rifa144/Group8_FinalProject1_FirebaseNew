@@ -8,6 +8,7 @@ import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.example.project1_group8_part1.DetailsActivity
 import com.example.project1_group8_part1.R
 import com.firebase.ui.database.FirebaseRecyclerAdapter
 import com.firebase.ui.database.FirebaseRecyclerOptions
@@ -24,13 +25,21 @@ class CandidateAdapter(options: FirebaseRecyclerOptions<Candidate>) : FirebaseRe
         position: Int,
         model: Candidate
     ) {
+
         Glide.with(holder.image.context).load(model.photo).into(holder.image)
         val p: Candidate = model
         holder.txtName.text = p.name
         holder.txtCurrentJob.text = p.current_job
         holder.listItem.setOnClickListener {
-            var intent  = Intent(holder.listItem.context,DetailsActivity::class.java)
-            intent.putExtra("name",model.name)
+            val intent = Intent(holder.listItem.context, DetailsActivity::class.java)
+            intent.putExtra("name", model.name)
+            intent.putExtra("current_job", model.current_job)
+            intent.putExtra("description", model.description)
+            intent.putExtra("highestEducation", model.highestEducation)
+            intent.putExtra("email", model.email)
+            intent.putExtra("photo", model.photo)
+            intent.putExtra("phone", model.phone)
+            intent.putExtra("title", model.title)
             holder.listItem.context.startActivity(intent)
         }
 
