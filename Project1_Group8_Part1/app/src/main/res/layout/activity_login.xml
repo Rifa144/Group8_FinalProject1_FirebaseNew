@@ -4,59 +4,94 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="20dp"
+    android:gravity="center"
     android:orientation="vertical"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
     tools:context=".LoginActivity">
-
     <ScrollView
         android:layout_width="match_parent"
-        android:padding="16dp"
         android:layout_height="match_parent">
-
         <LinearLayout
+            android:layout_gravity="center"
             android:layout_width="match_parent"
             android:orientation="vertical"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
             <ImageView
-                android:layout_gravity="center"
                 android:layout_width="200dp"
+                android:src="@drawable/logo"
                 android:layout_height="200dp"
-                android:layout_marginBottom="50dp"
-                android:src="@drawable/logo"/>
+                android:layout_gravity="center"/>
             <TextView
-                android:textSize="25dp"
-                android:textStyle="bold"
-                android:layout_gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Login Page"/>
+                android:text="Login Page"
+                android:layout_gravity="center"
+                android:textSize="22sp"/>
             <EditText
-                android:layout_marginBottom="30dp"
-                android:id="@+id/loginEmail"
+                android:maxLength="50"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:paddingLeft="10dp"
+                android:hint="Email Address"
+                android:drawablePadding="10dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Email"
-                android:inputType="textEmailAddress"/>
+                android:id="@+id/registxtemail"
+                android:background="@drawable/text_box"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="6dp"
+                android:elevation="6dp"
+                android:textSize="22sp"
+                android:layout_height="60dp"/>
+
             <EditText
-                android:id="@+id/loginPassword"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:maxLength="15"
+                android:singleLine="true"
+                android:paddingLeft="10dp"
                 android:hint="Password"
-                android:inputType="textPassword"/>
-            <Button
-                android:layout_marginTop="20dp"
+                android:inputType="textPassword"
+                android:drawablePadding="10dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Login"
-                android:backgroundTint="@color/black"
-                android:id="@+id/btnLogin"/>
+                android:id="@+id/registxtpassword"
+                android:background="@drawable/text_box"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="6dp"
+                android:elevation="6dp"
+                android:textSize="22sp"
+                android:layout_height="60dp"/>
             <Button
-                android:layout_marginTop="30dp"
+                android:id="@+id/loginBtn"
+                android:gravity="center"
+                android:layout_marginBottom="6dp"
+                android:layout_gravity="bottom"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Register"
-                android:backgroundTint="@color/black"
-                android:id="@+id/btnRegister"/>
+                android:layout_height="60dp"
+                android:text="Login Now"
+                android:elevation="6dp"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/white"/>
+            <Button
+                android:id="@+id/registerBtn"
+                android:gravity="center"
+                android:layout_marginBottom="6dp"
+                android:layout_gravity="bottom"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Go to Register Page"
+                android:elevation="6dp"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/white"/>
+
         </LinearLayout>
     </ScrollView>
+
 </LinearLayout>
