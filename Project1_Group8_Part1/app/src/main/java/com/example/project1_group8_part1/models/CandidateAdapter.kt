@@ -35,7 +35,7 @@ class CandidateAdapter(options: FirebaseRecyclerOptions<Candidate>) : FirebaseRe
             intent.putExtra("name", model.name)
             intent.putExtra("current_job", model.current_job)
             intent.putExtra("description", model.description)
-            intent.putExtra("highestEducation", model.highestEducation)
+            intent.putExtra("highestEducation", model.highest_education)
             intent.putExtra("email", model.email)
             intent.putExtra("photo", model.photo)
             intent.putExtra("phone", model.phone)

@@ -1,6 +1,7 @@
 package com.example.project1_group8_part1
 
 import android.os.Bundle
+import android.util.Log
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
