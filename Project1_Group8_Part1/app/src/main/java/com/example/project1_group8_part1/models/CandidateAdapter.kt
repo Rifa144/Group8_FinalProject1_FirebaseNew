@@ -32,6 +32,7 @@ class CandidateAdapter(options: FirebaseRecyclerOptions<Candidate>) : FirebaseRe
         holder.txtCurrentJob.text = p.current_job
         holder.listItem.setOnClickListener {
             val intent = Intent(holder.listItem.context, DetailsActivity::class.java)
+            val candidateId = snapshots.getSnapshot(position).key
             intent.putExtra("name", model.name)
             intent.putExtra("current_job", model.current_job)
             intent.putExtra("description", model.description)
@@ -40,6 +41,7 @@ class CandidateAdapter(options: FirebaseRecyclerOptions<Candidate>) : FirebaseRe
             intent.putExtra("photo", model.photo)
             intent.putExtra("phone", model.phone)
             intent.putExtra("title", model.title)
+            intent.putExtra("candidateId",candidateId)
             holder.listItem.context.startActivity(intent)
         }
 
