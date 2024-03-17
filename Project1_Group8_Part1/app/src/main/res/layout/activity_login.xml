@@ -63,33 +63,40 @@
                 android:elevation="6dp"
                 android:textSize="22sp"
                 android:layout_height="60dp"/>
+
             <Button
                 android:id="@+id/loginBtn"
-                android:gravity="center"
-                android:layout_marginBottom="6dp"
-                android:layout_gravity="bottom"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:text="Login Now"
-                android:elevation="6dp"
-                android:textSize="20sp"
+                android:layout_gravity="bottom"
                 android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginRight="10dp"
-                android:textColor="@color/white"/>
+                android:layout_marginBottom="6dp"
+                android:backgroundTint="#3F51B5"
+                android:elevation="6dp"
+                android:gravity="center"
+                android:text="Login Now"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:cornerRadius="0sp" />
+
             <Button
                 android:id="@+id/registerBtn"
-                android:gravity="center"
-                android:layout_marginBottom="6dp"
-                android:layout_gravity="bottom"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:text="Go to Register Page"
-                android:elevation="6dp"
-                android:textSize="20sp"
-                android:layout_marginTop="10dp"
+                android:layout_gravity="bottom"
                 android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginRight="10dp"
-                android:textColor="@color/white"/>
+                android:layout_marginBottom="6dp"
+                android:backgroundTint="#3F51B5"
+                android:elevation="6dp"
+                android:gravity="center"
+                android:text="Go to Register Page"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:cornerRadius="0sp" />
 
         </LinearLayout>
     </ScrollView>
