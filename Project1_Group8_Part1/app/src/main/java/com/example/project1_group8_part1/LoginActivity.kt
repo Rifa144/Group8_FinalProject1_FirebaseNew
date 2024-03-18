@@ -62,7 +62,7 @@ class LoginActivity : AppCompatActivity() {
             ?.addOnCompleteListener(this@LoginActivity) { task: Task<AuthResult?> ->
                 if (task.isSuccessful) {
                     // authentication done
-                    startActivity(Intent(this@LoginActivity, CandidateActivity::class.java))
+                    startActivity(Intent(this@LoginActivity, MainActivity::class.java))
                 } else {
                     // auth failed
                     Toast.makeText(this@LoginActivity, task.exception?.message,Toast.LENGTH_SHORT).show()
