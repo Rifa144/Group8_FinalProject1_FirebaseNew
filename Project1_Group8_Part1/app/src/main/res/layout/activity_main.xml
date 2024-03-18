@@ -8,17 +8,19 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+
     <FrameLayout
-        android:weightSum="2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:weightSum="2">
 
         <ImageView
             android:id="@+id/btnLogout"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_gravity="left"
+            android:layout_marginLeft="20dp"
             android:layout_weight="1"
             android:src="@drawable/logout" />
 
@@ -35,20 +37,19 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_gravity="right"
-            android:layout_marginRight="50dp"
+            android:layout_marginRight="20dp"
             android:layout_weight="1"
-            android:src="@drawable/tomain" />
+            android:src="@drawable/candidate" />
 
 
     </FrameLayout>
-
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/pView"
         android:layout_width="370dp"
         android:layout_height="600dp"
 
-         />
+        android:layout_marginTop="20dp" />
 
 
 </LinearLayout>

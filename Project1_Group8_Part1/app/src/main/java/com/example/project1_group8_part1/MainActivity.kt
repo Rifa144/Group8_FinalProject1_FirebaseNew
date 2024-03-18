@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
             finish()
         }
         btnGoHome?.setOnClickListener {
-            startActivity(Intent(this,MainActivity::class.java))
+            startActivity(Intent(this,CandidateActivity::class.java))
         }
 
         val query = FirebaseDatabase.getInstance().reference.child("post");
